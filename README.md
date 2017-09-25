@@ -1,6 +1,8 @@
 # chat-code-collab
 Fall Term 2017 Web Development Project
 
+Github Markdown Guide : [Mastering Markdown](https://guides.github.com/features/mastering-markdown/)
+
 ## Technologies Used
 * Angular-2
 * NodeJS
