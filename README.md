@@ -1,6 +1,11 @@
 # chat-code-collab
 Fall Term 2017 Web Development Project
 
+## Description
+<blockquote>
+A web application that provides a code editor, compiler, and collaborate experience between individuals. Some usage may include practicing online coding interviews and verifying/producing/modifying project code snippets.
+</blockquote>
+ 
 Github Markdown Guide : [Mastering Markdown](https://guides.github.com/features/mastering-markdown/)
 
 ## Technologies Used
@@ -8,6 +13,7 @@ Github Markdown Guide : [Mastering Markdown](https://guides.github.com/features/
 * NodeJS
 * ExpressJS
 * Firebase
+* Hackerrank API
 
 ## Learning Process
 * Save 3 hours of your time and get started right away with how to deploy a full-stack web application
