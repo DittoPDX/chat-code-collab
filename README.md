@@ -18,3 +18,9 @@ Github Markdown Guide : [Mastering Markdown](https://guides.github.com/features/
 ## Learning Process
 * Save 3 hours of your time and get started right away with how to deploy a full-stack web application
   * [Deploying Angular-CLI/Node.JS Heroku](https://medium.com/@ryanchenkie_40935/angular-cli-deployment-host-your-angular-2-app-on-heroku-3f266f13f352)
+* Integrate ACE-Editor into Angular 2+
+  * [ng2-ace-editor](https://github.com/fxmontigny/ng2-ace-editor)
+* Add in a Bulma instead of Bootstrap for user interface
+  * [Bulma](http://bulma.io/documentation/)
+* Storing data into firebase
+  * [Firebase TUT 1](https://www.codementor.io/johnnyb/fireedit-real-time-editor-javascript-firebase-59lnmf3c6)
