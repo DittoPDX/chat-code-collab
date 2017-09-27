@@ -19,6 +19,9 @@ export class AppComponent
 	toggled: boolean = false;
 	toggled2: boolean = false;
 
+	/*
+	TO-DO: Try Jasmine TDD for the menu issue/development
+	*/
 	//Handle user click event for menu
 	menuToggle()
 	{
