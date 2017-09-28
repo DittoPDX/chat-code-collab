@@ -1,58 +1,13 @@
-<nav class="is-dark navbar" role="navigation" aria-label="dropdown navigation" >
-  <a class="navbar-item">
-    <img src="http://bulma.io/images/bulma-logo.png" alt="Bulma: a modern CSS framework based on Flexbox" width="112" height="28">
-  </a>
+<menu-bar></menu-bar>
 
-  <div class="navbar-item has-dropdown is-active" style="color: white;" (click)="menuToggle()" [ngClass]="{'is-active': toggled}">
-    <a class="navbar-link" style="color: white;">
-      Menu
-    </a>
-
-    <div class="navbar-dropdown">
-      <a class="navbar-item">
-        Chat
-      </a>
-      <a class="navbar-item">
-        Compiler
-      </a>
-      <a class="navbar-item">
-        Export File
-      </a>
-      <hr class="navbar-divider">
-      <div class="navbar-item">
-        Version 1.0.0
-      </div>
-    </div>
-  </div>
-
-  <div class="navbar-item has-dropdown" (click)="langToggle()" [ngClass]="{'is-active': toggled2}">
-    <a class="navbar-link" style="color: white;">
-      Languages
-    </a>
-  </div>
-
-  <div class="navbar-item has-dropdown">
-    <a class="navbar-link" style="color: white;" >
-      Themes
-    </a>
-  </div>
-
-  <div class="navbar-item has-dropdown">
-    <a class="navbar-link" style="color: white;" >
-      GitHub
-    </a>
-  </div>
-
-</nav>
-
-  <div ace-editor
-       [(text)]="text"
-       [mode]="'sql'"
-       [options]="options"
-       [theme]="'monokai'"
-       [readOnly]="false"
-       [autoUpdateContent]="true"
-       [durationBeforeCallback]="1000"
-       (textChanged) = "onChange($event)"
-       style="min-height: 600px; width:100%; overflow: auto;">
-  </div>
+<div ace-editor
+	[(text)]="text"
+        [mode]="'javascript'"
+        [options]="options"
+        [theme]="'monokai'"
+        [readOnly]="false"
+        [autoUpdateContent]="true"
+        [durationBeforeCallback]="1000"
+        (textChanged) = "onChange($event)"
+        style="min-height: 1200px; width:100%; overflow: auto;">
+</div>

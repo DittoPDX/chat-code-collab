@@ -1,8 +1,10 @@
-    #editor { 
-        height: 550px;
-        width: 100%;
-        top: 0;
-        right: 0;
-        bottom: 0;
-        left: 0;
-    }
+/*Initial location and size settings for Ace-Editor*/
+#editor 
+{ 
+	height: auto;
+    	width: 100%;
+    	top: 0;
+    	right: 0;
+    	bottom: 0;
+    	left: 0;
+}

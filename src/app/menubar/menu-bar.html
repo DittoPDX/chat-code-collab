@@ -1,0 +1,71 @@
+<nav class="is-dark navbar" role="navigation" aria-label="dropdown navigation" >
+  <a class="navbar-item">
+    <img src="https://lh4.googleusercontent.com/dAd-xRBX0WVcs4ipT5aNPkLbMxQ-UpkO8PoP2ld6jODxACrBGUZlMaComeOU24uKgHI0ApU7d0vzQw0=w1366-h591" alt="Logo" width="112" height="28">
+  </a>
+
+  <div class="navbar-item has-dropdown" (mouseenter)="mouseHover(true)" (mouseleave)="mouseHover(false)" (click)="menuToggle()"[ngClass]="(onHover == true)?'is-active':''">
+    <a class="navbar-link" style="color: #FFD700;">
+	<i class="fa fa-cog" aria-hidden="true"></i>
+      Options
+    </a>
+
+    <div class="navbar-dropdown">
+      <a class="navbar-item">
+        Chat
+      </a>
+      <a class="navbar-item">
+        Compiler
+      </a>
+      <a class="navbar-item">
+        Export File
+      </a>
+      <hr class="navbar-divider">
+      <div class="navbar-item">
+        Version 1.0.0
+      </div>
+    </div>
+  </div>
+
+  <div class="navbar-item has-dropdown" (mouseenter)="mouseHover1(true)" (mouseleave)="mouseHover1(false)" (click)="menuToggle1()"[ngClass]="(onHover1 == true)?'is-active':''">
+    <a class="navbar-link" style="color: #FFD700;">
+	<i class="fa fa-superpowers" aria-hidden="true"></i>
+      Languages
+    </a>
+
+    <div class="navbar-dropdown">
+      <a class="navbar-item">
+        C++
+      </a>
+    </div>
+  
+  </div>
+
+  <div class="navbar-item has-dropdown" (mouseenter)="mouseHover2(true)" (mouseleave)="mouseHover2(false)" (click)="menuToggle2()"[ngClass]="(onHover2 == true)?'is-active':''">
+    <a class="navbar-link" style="color: #FFD700;" >
+	<i class="fa fa-themeisle" aria-hidden="true"></i>
+      Themes
+    </a>
+
+    <div class="navbar-dropdown">
+      <a class="navbar-item">
+        Eclipse
+      </a>
+    </div>
+
+  </div>
+
+  <div class="navbar-item has-dropdrown">
+    <a class="navbar-link" style="color: #FFD700;" href="https://github.com/DittoPDX/chat-code-collab" target="__blank">
+	<i class="fa fa-github" aria-hidden="true"></i>
+      GitHub
+    </a>
+
+    <div class="navbar-dropdown">
+      <a class="navbar-item">
+        About
+      </a>
+   </div>
+
+  </div>
+
+</nav>

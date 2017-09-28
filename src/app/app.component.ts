@@ -1,27 +1,27 @@
 import { Component, OnChanges, SimpleChanges, Input, Output, EventEmitter, Renderer, ViewChild } from '@angular/core';
+import 'brace/mode/html';
+import 'brace/mode/javascript';
 
 @Component
 ({
   selector: 'app-root',
   templateUrl: './app.component.html'
 })
+
 export class AppComponent
 {
-	text:string = "12345";
-	options:any = {maxLines: 1000, printMargin: false, fontSize: "20px"};
+	text:string = "";
+	options:any = {maxLines: 1000, printMargin: false, fontSize: '20px', mode: 'javascript'};
 
 	//Need to send AJAX post request for express server to handle
 	onChange(event)
 	{
 		console.log(event);
 	}
-	
-	toggled: boolean = false;
-	toggled2: boolean = false;
 
-	/*
-	Going to perform first Jasmine TDD for the menu
-	*/
+	toggled: boolean = false;
+	tabNum: number = 0;
+
 	//Handle user click event for menu
 	menuToggle()
 	{
@@ -29,10 +29,9 @@ export class AppComponent
 		//console.log(this.toggled);
 	}
 
-	//Handle user click event for languages
-	langToggle()
+	//Handle active tab
+	setTab(num)
 	{
-		this.toggled2 = !this.toggled2;
-		//console.log(this.toggled2);
+		this.tabNum = num;
 	}
 }
