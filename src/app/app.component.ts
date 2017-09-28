@@ -22,6 +22,9 @@ export class AppComponent
 	toggled: boolean = false;
 	tabNum: number = 0;
 
+	/*
+	TO-DO: Try Jasmine TDD for the menu issue/development
+	*/
 	//Handle user click event for menu
 	menuToggle()
 	{
