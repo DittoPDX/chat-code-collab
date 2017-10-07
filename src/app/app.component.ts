@@ -1,5 +1,8 @@
 import { Component, OnChanges, SimpleChanges, Input, Output, EventEmitter, Renderer, ViewChild } from '@angular/core';
+import { Http, Response, Headers, RequestOptions } from '@angular/http';
+import { HttpClient, HttpHeaders } from '@angular/common/http';
 import 'brace/mode/html';
+import 'brace/mode/c_cpp';
 import 'brace/mode/javascript';
 
 @Component
@@ -11,30 +14,25 @@ import 'brace/mode/javascript';
 export class AppComponent
 {
 	text:string = "";
-	options:any = {maxLines: 1000, printMargin: false, fontSize: '20px', mode: 'javascript'};
+
+	options:any = {maxLines: 1000, printMargin: false, fontSize: '20px'};
 
 	//Need to send AJAX post request for express server to handle
 	onChange(event)
 	{
 		console.log(event);
+    this.callServer(event);
 	}
 
-	toggled: boolean = false;
-	tabNum: number = 0;
+  editorData = { text : ''};
+  
+    constructor(private http: Http) { }
 
-	/*
-	TO-DO: Try Jasmine TDD for the menu issue/development
-	*/
-	//Handle user click event for menu
-	menuToggle()
-	{
-		this.toggled = !this.toggled;
-		//console.log(this.toggled);
-	}
-
-	//Handle active tab
-	setTab(num)
-	{
-		this.tabNum = num;
-	}
+  callServer(event) {
+    this.editorData.text = event;
+    var headers = new Headers();
+    headers.append('Content-Type', 'application/json');
+    headers.append('Access-Control-Allow-Origin','*');
+    this.http.post('http://localhost:8080/', JSON.stringify(this.editorData), { headers: headers}).subscribe();
+  }
 }

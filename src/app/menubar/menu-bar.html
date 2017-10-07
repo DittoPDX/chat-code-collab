@@ -1,9 +1,9 @@
 <nav class="is-dark navbar" role="navigation" aria-label="dropdown navigation" >
   <a class="navbar-item">
-    <img src="https://lh4.googleusercontent.com/dAd-xRBX0WVcs4ipT5aNPkLbMxQ-UpkO8PoP2ld6jODxACrBGUZlMaComeOU24uKgHI0ApU7d0vzQw0=w1366-h591" alt="Logo" width="112" height="28">
+    <img src="assets/bulma-logo.png" alt="Logo" width="112" height="28">
   </a>
 
-  <div class="navbar-item has-dropdown" (mouseenter)="mouseHover(true)" (mouseleave)="mouseHover(false)" (click)="menuToggle()"[ngClass]="(onHover == true)?'is-active':''">
+  <div class="navbar-item has-dropdown" (mouseenter)="mouseHover(true, 1)" (mouseleave)="mouseHover(false, 1)" [ngClass]="(onHover1 == true)?'is-active':''">
     <a class="navbar-link" style="color: #FFD700;">
 	<i class="fa fa-cog" aria-hidden="true"></i>
       Options
@@ -26,7 +26,7 @@
     </div>
   </div>
 
-  <div class="navbar-item has-dropdown" (mouseenter)="mouseHover1(true)" (mouseleave)="mouseHover1(false)" (click)="menuToggle1()"[ngClass]="(onHover1 == true)?'is-active':''">
+  <div class="navbar-item has-dropdown" (mouseenter)="mouseHover(true, 2)" (mouseleave)="mouseHover(false, 2)" [ngClass]="(onHover2 == true)?'is-active':''">
     <a class="navbar-link" style="color: #FFD700;">
 	<i class="fa fa-superpowers" aria-hidden="true"></i>
       Languages
@@ -40,7 +40,7 @@
   
   </div>
 
-  <div class="navbar-item has-dropdown" (mouseenter)="mouseHover2(true)" (mouseleave)="mouseHover2(false)" (click)="menuToggle2()"[ngClass]="(onHover2 == true)?'is-active':''">
+  <div class="navbar-item has-dropdown" (mouseenter)="mouseHover(true, 3)" (mouseleave)="mouseHover(false, 3)" [ngClass]="(onHover3 == true)?'is-active':''">
     <a class="navbar-link" style="color: #FFD700;" >
 	<i class="fa fa-themeisle" aria-hidden="true"></i>
       Themes

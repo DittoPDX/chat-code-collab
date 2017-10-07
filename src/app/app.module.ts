@@ -4,6 +4,8 @@ import { NgModule } from '@angular/core';
 import { AppComponent } from './app.component';
 import { MenuBarComponent } from './menubar/menu-bar.component';
 import { AceEditorModule } from 'ng2-ace-editor';
+import { HttpClientModule } from '@angular/common/http';
+import { HttpModule } from '@angular/http';
 
 @NgModule({
   declarations: [
@@ -12,7 +14,9 @@ import { AceEditorModule } from 'ng2-ace-editor';
   ],
   imports: [
     BrowserModule,
-    AceEditorModule
+    AceEditorModule,
+    HttpClientModule,
+    HttpModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -10,43 +10,30 @@ import { Component, Input } from '@angular/core';
 export class MenuBarComponent
 {	
 	//Three hover checks for the menu bar
-	onHover: boolean;
 	onHover1: boolean;
 	onHover2: boolean;
-	
-	//Handle user click event for menu
-	menuToggle()
-	{
-		this.onHover = false;
-	}
+	onHover3: boolean;
 
 	//Handle user hover for menu
-	mouseHover(isHover)
+	mouseHover(isHover, tabNum)
 	{
-		this.onHover = isHover;
-	}
-
-	//Handle user click event for menu
-	menuToggle1()
-	{
-		this.onHover1 = false;
-	}
-
-	//Handle user hover for menu
-	mouseHover1(isHover)
-	{
-		this.onHover1 = isHover;
-	}
-
-	//Handle user click event for menu
-	menuToggle2()
-	{
-		this.onHover2 = false;
-	}
-
-	//Handle user hover for menu
-	mouseHover2(isHover)
-	{
-		this.onHover2 = isHover;
+		switch (tabNum)
+		{
+			case 1:
+			{
+				this.onHover1 = isHover;
+				break;	
+			}
+			case 2:
+			{
+				this.onHover2 = isHover;
+				break;	
+			}
+			case 3:
+			{
+				this.onHover3 = isHover;
+				break;	
+			}
+		}
 	}
 }
