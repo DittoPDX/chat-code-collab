@@ -12,7 +12,11 @@ Github Markdown Guide : [Mastering Markdown](https://guides.github.com/features/
 * Program Model: Firebase -> Express.JS/Node.JS -> Angular2
 * Connect Node.js to Firebase (api key etc.)
 * Send in a post request from Angular framework so Express.js can use it for Firebase
+* Send in a get request from Angular framework to Express.js ngOnInit()...
 * Store/Retrieve data from firebase (GET/POST requests)
+* Edit chat UI (maybe bottom circle on the bottom for group chat)
+* Refactor node.js code
+* Add hackerrank compiler capabilities
 
 ## Technologies Used
 * Angular-2
