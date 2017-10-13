@@ -34,3 +34,5 @@ Github Markdown Guide : [Mastering Markdown](https://guides.github.com/features/
   * [Bulma](http://bulma.io/documentation/)
 * Storing data into firebase
   * [Firebase TUT 1](https://www.codementor.io/johnnyb/fireedit-real-time-editor-javascript-firebase-59lnmf3c6)
+* Real-time Editor Logic
+  * [Logic] (https://www.pluralsight.com/guides/node-js/building-a-realtime-collaborative-editor-with-rethinkdb)
