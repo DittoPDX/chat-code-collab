@@ -1,6 +1,13 @@
 # chat-code-collab
 Fall Term 2017 Web Development Project
 
+## How To Run
+Simply execute the below command to build for production and run the server.
+<blockquote>
+ng install --aot -prod && node server.js
+</blockquote>
+
+
 ## Description
 <blockquote>
 A web application that provides a code editor, compiler, and collaborate experience between individuals. Some usage may include practicing online coding interviews and verifying/producing/modifying project code snippets.
