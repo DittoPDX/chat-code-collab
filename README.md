@@ -7,6 +7,9 @@ Simply execute the below command to build for production and run the server.
 ng install --aot -prod && node server.js
 </blockquote>
 
+## How To Test Backend Code
+Simply execute <blockquote>./node_modules/mocha/bin/mocha</blockquote> to test the backend part of this project
+
 
 ## Description
 <blockquote>
