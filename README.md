@@ -10,28 +10,26 @@ ng install --aot -prod && node server.js
 ## How To Test Backend Code
 Simply execute <blockquote>./node_modules/mocha/bin/mocha</blockquote> to test the backend part of this project
 
-
 ## Description
 <blockquote>
-A web application that provides a code editor, compiler, and collaborate experience between individuals. Some usage may include practicing online coding interviews and verifying/producing/modifying project code snippets.
+A real time web application that provides a code editor and compiler between individuals. Some usage may include practicing online coding interviews and verifying/producing/modifying project code snippets.
 </blockquote>
  
 Github Markdown Guide : [Mastering Markdown](https://guides.github.com/features/mastering-markdown/)
 
 ## TO-DO
-* Program Model: Firebase -> Express.JS/Node.JS -> Angular2
-* Connect Node.js to Firebase (api key etc.)
-* Send in a post request from Angular framework so Express.js can use it for Firebase
-* Send in a get request from Angular framework to Express.js ngOnInit()...
-* Store/Retrieve data from firebase (GET/POST requests)
-* Edit chat UI (maybe bottom circle on the bottom for group chat)
-* Refactor node.js code
-* Add hackerrank compiler capabilities
+* ~~Program Model: Firebase -> Socket.io/Express.JS/Node.JS -> Angular2~~
+* ~~Connect Node.js to Firebase (api key etc.)~~
+* ~~Store/Retrieve/Edit/Delete data from Firebase~~
+* Either use MongoDB/Firebase for chat data
+* Create chat UI (maybe bottom circle on the bottom for group chat)
+* Add hackerrank compiler API
 
 ## Technologies Used
 * Angular-2
-* NodeJS
-* ExpressJS
+* Node.js
+* Socket.io
+* Express.js
 * Firebase
 * Hackerrank API
 
