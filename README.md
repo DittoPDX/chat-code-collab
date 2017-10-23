@@ -23,7 +23,7 @@ Github Markdown Guide : [Mastering Markdown](https://guides.github.com/features/
 * ~~Store/Retrieve/Edit/Delete data from Firebase~~
 * Either use MongoDB/Firebase for chat data
 * Create chat UI (maybe bottom circle on the bottom for group chat)
-* Add hackerrank compiler API
+* Add hackerrank compiler API (supports languages such as C++, Java, etc...)
 
 ## Technologies Used
 * Angular-2
@@ -33,12 +33,12 @@ Github Markdown Guide : [Mastering Markdown](https://guides.github.com/features/
 * Firebase
 * Hackerrank API
 
-## Learning Process (Documentation + Programming Logic + Setting Up)
-* Save 3 hours of your time and get started right away with how to deploy a full-stack web application
+## Learning Process (Documentation + Setting Up)
+* Save 3 hours of time and get started right away with how to deploy a full-stack web application
   * [Deploying Angular-CLI/Node.JS Heroku](https://medium.com/@ryanchenkie_40935/angular-cli-deployment-host-your-angular-2-app-on-heroku-3f266f13f352)
-* Integrate ACE-Editor into Angular 2+
+* Compatible ACE-Editor with documentation for Angular 2+
   * [ng2-ace-editor](https://github.com/fxmontigny/ng2-ace-editor)
-* Add in a Bulma instead of Bootstrap for user interface
+* Bulma instead of Bootstrap for user interface
   * [Bulma](http://bulma.io/documentation/)
 * Firebase Documentation
   * [Firebase Docs](https://firebase.google.com/docs/reference/)
