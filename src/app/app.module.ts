@@ -7,6 +7,12 @@ import { AceEditorModule } from 'ng2-ace-editor';
 import { HttpClientModule } from '@angular/common/http';
 import { HttpModule } from '@angular/http';
 
+import { SocketIoModule, SocketIoConfig } from 'ng-socket-io';
+
+const config: SocketIoConfig = { url: 'https://chat-code-collab.herokuapp.com', options: {} };
+
+//const config: SocketIoConfig = { url: 'http://localhost:8080/', options: {} };
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -16,7 +22,8 @@ import { HttpModule } from '@angular/http';
     BrowserModule,
     AceEditorModule,
     HttpClientModule,
-    HttpModule
+    HttpModule,
+    SocketIoModule.forRoot(config)
   ],
   providers: [],
   bootstrap: [AppComponent]

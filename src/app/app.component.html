@@ -1,6 +1,6 @@
 <menu-bar></menu-bar>
 
-<div ace-editor
+<ace-editor
 	[mode]="'c_cpp'"
 	[(text)]="text"
         [mode]="'groovy'"
@@ -9,6 +9,6 @@
         [readOnly]="false"
         [autoUpdateContent]="true"
         [durationBeforeCallback]="1000"
-        (textChanged) = "onChange($event)"
+	#editor
         style="min-height: 1200px; width:100%; overflow: auto;">
-</div>
+</ace-editor>
