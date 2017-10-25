@@ -1,6 +1,8 @@
 'use strict';
 
 const app = require('../server.js');
+const { URL } = require('url');
+const myUrl = new URL('https://chat-code-collab.herokuapp.com/testroom');
 const expect = require('chai').expect;
 const request = require('request');
 
@@ -18,5 +20,8 @@ describe('Testing Simultaneous Coding App Backend', () =>
 		});
 	});
 
-		
+	it('Pathname Should Return Value', () =>
+	{
+		expect(myUrl.pathname !== null);
+	});	
 });
