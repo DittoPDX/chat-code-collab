@@ -1,14 +1,20 @@
 # chat-code-collab
 Fall Term 2017 Web Development Project
 
+## How to Install
+Execute the below command to get the node_modules files.
+<blockquote>
+npm install
+</blockquote>
+ 
 ## How To Run
-Simply execute the below command to build for production and run the server.
+Execute the below command to build for production and run the server.
 <blockquote>
 ng install --aot -prod && node server.js
 </blockquote>
 
 ## How To Test Backend Code
-Simply execute <blockquote>./node_modules/mocha/bin/mocha</blockquote> to test the backend part of this project
+Simply execute <blockquote>./node_modules/mocha/bin/mocha</blockquote> to test the backend part of this project.
 
 ## Description
 <blockquote>
