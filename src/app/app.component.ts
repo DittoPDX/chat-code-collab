@@ -1,10 +1,12 @@
+import { AceEditorModule } from 'ng2-ace-editor';
 import { UpdaterService } from './updater.service';
-import { Component, OnChanges, SimpleChanges, Input, Output, EventEmitter, Renderer, ViewChild } from '@angular/core';
+import { CUSTOM_ELEMENTS_SCHEMA, Component, OnChanges, SimpleChanges, Input, Output, EventEmitter, Renderer, ViewChild } from '@angular/core';
 import { Http, Response, Headers, RequestOptions } from '@angular/http';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
-import 'brace/mode/html';
-import 'brace/mode/c_cpp';
-import 'brace/mode/javascript';
+import * as ace from 'brace';
+//import 'brace/mode/html';
+//import 'brace/mode/c_cpp';
+//import 'brace/mode/javascript';
 
 @Component
 ({

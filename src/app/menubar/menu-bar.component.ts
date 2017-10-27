@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component, Input, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 
 @Component
 ({

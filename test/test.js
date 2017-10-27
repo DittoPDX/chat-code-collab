@@ -5,10 +5,17 @@ const { URL } = require('url');
 const myUrl = new URL('https://chat-code-collab.herokuapp.com/testroom');
 const expect = require('chai').expect;
 const request = require('request');
+const io = require('socket.io-client');
+
+const options =
+{
+	transports: ['websocket'],
+	'force new connection': true
+};
 
 describe('Testing Simultaneous Coding App Backend', () =>
 {
-	it('Main Page Content Should Return 200 Status & Not Equal Null', (done) =>
+	it('Main Page content should return 200 status & not equal null', (done) =>
 	{
 		request('http://localhost:8080', function(error, response, body) 
 		{
@@ -20,8 +27,29 @@ describe('Testing Simultaneous Coding App Backend', () =>
 		});
 	});
 
-	it('Pathname Should Return Value', () =>
+	/*
+	describe('Testing Path Name for Code Room Setup', () =>
 	{
-		expect(myUrl.pathname !== null);
-	});	
+		it('Pathname Should Return Value', () =>
+		{
+			expect(myUrl.pathname !== null);
+		});	
+	});
+	*/
+});
+
+describe('Testing Socket.io Component of App Backend', () =>
+{
+	it('Should connect user with unique socket id', (done) =>
+	{
+		let client = io.connect('http://localhost:8080', options);
+		
+		client.on("connect", () =>
+		{
+			expect(client.id).to.not.equal(null);
+			//console.log("    " + client.id);
+			client.disconnect();
+			done();
+		});
+	});
 });

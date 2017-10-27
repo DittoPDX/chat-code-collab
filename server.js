@@ -2,6 +2,7 @@
  * Desc: Real time web app that enables coding, compiling, and chatting with multiple users
  */
 
+const url = require('url');
 const express = require('express');
 const bodyParser = require('body-parser');
 const app = express();
@@ -47,6 +48,7 @@ var queueRef = currentEditorValue.child("queue");
 // If database content is null, fill it with pre-filled data
 currentEditorValue.child("content").once("value", function (contentRef)
 {
+	//console.log(contentRef.val());
 	if (contentRef.val() === null)
 	{
 		// Default settings/values for the editor
@@ -124,3 +126,4 @@ io.on('connection', function(socket)
 		});
 	});
 });
+
